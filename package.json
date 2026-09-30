@@ -1,0 +1,12 @@
+{
+  "name": "incona-dashboard",
+  "version": "1.0.0",
+  "description": "Clone do Incona - Painel de Controle e Registro de Expedição",
+  "scripts": {
+    "start": "npx serve -l 3000 .",
+    "dev": "npx serve -l 3000 ."
+  },
+  "keywords": ["incona", "dashboard", "supabase"],
+  "author": "",
+  "license": "ISC"
+}
