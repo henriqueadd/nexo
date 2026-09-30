@@ -1,7 +1,7 @@
 @echo off
-title Incona Dashboard
+title Painel de Controle
 echo ======================================================
-echo           Iniciando Incona Dashboard Local
+echo           Iniciando Painel de Controle Local
 echo ======================================================
 echo.
 echo Abrindo o navegador em http://localhost:3000 ...

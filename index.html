@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Incona · Painel de Controle</title>
+<title>Painel de Controle</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -11,8 +11,8 @@
 <style>
 
   :root{
-    --incona-blue:#2C7DA0;
-    --incona-blue-deep:#1B4F6B;
+    --brand-blue:#2C7DA0;
+    --brand-blue-deep:#1B4F6B;
     --blueprint-navy:#10283A;
     --ink:#15191C;
     --ink-soft:#5B6570;
@@ -40,7 +40,7 @@
     color:var(--ink);
   }
   button{font-family:inherit; cursor:pointer; border:none; background:none;}
-  :focus-visible{outline:3px solid var(--incona-blue); outline-offset:2px;}
+  :focus-visible{outline:3px solid var(--brand-blue); outline-offset:2px;}
 
   @media (prefers-reduced-motion: reduce){
     *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
@@ -90,7 +90,7 @@
     top:14px; right:14px;
     font-family:var(--font-mono);
     font-size:9.5px;
-    color:var(--incona-blue-deep);
+    color:var(--brand-blue-deep);
     background:var(--blue-soft);
     padding:4px 9px;
     border-radius:20px;
@@ -141,7 +141,7 @@
     border-bottom:2px solid transparent;
     text-align:center;
   }
-  .login-tab.active{color:var(--ink); border-bottom-color:var(--incona-blue);}
+  .login-tab.active{color:var(--ink); border-bottom-color:var(--brand-blue);}
 
   .pin-label{
     font-family:var(--font-mono);
@@ -166,7 +166,7 @@
     color:var(--ink);
     margin-bottom:8px;
   }
-  .pin-input:focus{border-color:var(--incona-blue); outline:none;}
+  .pin-input:focus{border-color:var(--brand-blue); outline:none;}
   .pin-input.shake{animation:shake 0.5s;}
 
   .pin-error{
@@ -189,7 +189,7 @@
     margin-top:8px;
     transition:background 0.15s ease;
   }
-  .btn-login:active{background:var(--incona-blue-deep);}
+  .btn-login:active{background:var(--brand-blue-deep);}
 
   .demo-hint{
     text-align:center;
@@ -201,7 +201,7 @@
     padding:8px 14px;
     margin:18px 0 0;
   }
-  .demo-hint b{color:var(--incona-blue-deep);}
+  .demo-hint b{color:var(--brand-blue-deep);}
 
   /* ---------- Topbar ---------- */
   .topbar{
@@ -227,7 +227,7 @@
   }
   .topbar-greeting{font-size:14.5px; font-weight:600;}
   .topbar-role{font-family:var(--font-mono); font-size:10.5px; color:var(--ink-faint); text-transform:uppercase; letter-spacing:0.4px;}
-  .link-btn{font-size:13.5px; font-weight:600; color:var(--incona-blue-deep); padding:6px;}
+  .link-btn{font-size:13.5px; font-weight:600; color:var(--brand-blue-deep); padding:6px;}
 
   /* ---------- Pedidos list ---------- */
   .pedidos-body{flex:1; overflow-y:auto; padding:20px;}
@@ -242,7 +242,7 @@
 
   .lnc-btn-secondary{
     display:flex; align-items:center; justify-content:center; gap:8px;
-    width:100%; padding:12px; border-radius:14px; background:var(--surface); color:var(--incona-blue-deep);
+    width:100%; padding:12px; border-radius:14px; background:var(--surface); color:var(--brand-blue-deep);
     font-weight:700; font-size:13px; margin-bottom:16px; border:1.5px solid var(--line);
   }
   .lnc-btn-secondary svg{width:15px; height:15px;}
@@ -260,7 +260,7 @@
   .escolha-icon-wrap{width:44px; height:44px; border-radius:12px; display:flex; align-items:center; justify-content:center; flex-shrink:0;}
   .escolha-icon-wrap svg{width:22px; height:22px;}
   .escolha-icon-wrap.retira{background:var(--violet-soft); color:var(--violet);}
-  .escolha-icon-wrap.expedicao{background:var(--blue-soft); color:var(--incona-blue);}
+  .escolha-icon-wrap.expedicao{background:var(--blue-soft); color:var(--brand-blue);}
   .escolha-tipo-title{display:block; font-weight:700; font-size:15px; margin-bottom:3px;}
   .escolha-tipo-sub{display:block; font-size:12px; color:var(--ink-faint);}
 
@@ -282,7 +282,7 @@
     justify-content:center;
     gap:6px;
   }
-  .pedidos-tab.active{color:var(--ink); border-bottom-color:var(--incona-blue);}
+  .pedidos-tab.active{color:var(--ink); border-bottom-color:var(--brand-blue);}
   .pedidos-tab-count{
     font-family:var(--font-mono);
     font-size:10px;
@@ -291,7 +291,7 @@
     border-radius:10px;
     color:var(--ink-faint);
   }
-  .pedidos-tab.active .pedidos-tab-count{background:var(--blue-soft); color:var(--incona-blue-deep);}
+  .pedidos-tab.active .pedidos-tab-count{background:var(--blue-soft); color:var(--brand-blue-deep);}
   .pedidos-empty{display:none; text-align:center; color:var(--ink-faint); font-size:14px; padding:70px 20px;}
   .pedidos-empty.show{display:block;}
   .pedidos-cards{display:flex; flex-direction:column; gap:14px;}
@@ -301,7 +301,7 @@
     border-radius:16px;
     padding:18px;
   }
-  .pedido-card-id{font-family:var(--font-mono); font-weight:700; font-size:15px; color:var(--incona-blue-deep); margin-bottom:4px;}
+  .pedido-card-id{font-family:var(--font-mono); font-weight:700; font-size:15px; color:var(--brand-blue-deep); margin-bottom:4px;}
   .pedido-card-client{font-size:16px; font-weight:600; margin-bottom:16px;}
   .btn-big{
     width:100%;
@@ -317,7 +317,7 @@
     gap:9px;
   }
   .btn-big svg{width:20px; height:20px;}
-  .btn-big:active{background:var(--incona-blue-deep);}
+  .btn-big:active{background:var(--brand-blue-deep);}
 
   /* ---------- Registro ---------- */
   .registro-body{flex:1; padding:24px 20px; display:flex; flex-direction:column; overflow-y:auto;}
@@ -445,7 +445,7 @@
     text-align:center;
     font-size:13.5px;
     font-weight:600;
-    color:var(--incona-blue-deep);
+    color:var(--brand-blue-deep);
     padding:6px 0 20px;
   }
 
@@ -494,8 +494,8 @@
   /* ==================== ADMIN DASHBOARD STYLES ==================== */
 
   :root{
-    --incona-blue:#2C7DA0;
-    --incona-blue-deep:#1B4F6B;
+    --brand-blue:#2C7DA0;
+    --brand-blue-deep:#1B4F6B;
     --blueprint-navy:#10283A;
     --ink:#15191C;
     --ink-soft:#5B6570;
@@ -532,7 +532,7 @@
   button{font-family:inherit; cursor:pointer;}
 
   :focus-visible{
-    outline:2px solid var(--incona-blue);
+    outline:2px solid var(--brand-blue);
     outline-offset:2px;
     border-radius:4px;
   }
@@ -556,13 +556,13 @@
   }
   .tick::before{
     top:8px; left:8px;
-    border-top:1.5px solid var(--incona-blue);
-    border-left:1.5px solid var(--incona-blue);
+    border-top:1.5px solid var(--brand-blue);
+    border-left:1.5px solid var(--brand-blue);
   }
   .tick::after{
     bottom:8px; right:8px;
-    border-bottom:1.5px solid var(--incona-blue);
-    border-right:1.5px solid var(--incona-blue);
+    border-bottom:1.5px solid var(--brand-blue);
+    border-right:1.5px solid var(--brand-blue);
   }
 
   /* ---------- App shell ---------- */
@@ -594,7 +594,7 @@
     top:0; right:-1px;
     width:3px;
     height:64px;
-    background:var(--incona-blue);
+    background:var(--brand-blue);
   }
   .brand{
     display:flex;
@@ -643,7 +643,7 @@
     background:none; text-align:left; width:100%;
   }
   .sidebar-fluxo-opcao svg{width:15px; height:15px; flex-shrink:0;}
-  .sidebar-fluxo-opcao.ativa{background:var(--blue-soft); color:var(--incona-blue-deep); border-color:#C7DFEA;}
+  .sidebar-fluxo-opcao.ativa{background:var(--blue-soft); color:var(--brand-blue-deep); border-color:#C7DFEA;}
   .sidebar-fluxo-opcao.retira.ativa{background:var(--violet-soft); color:#5B4A94; border-color:#D9CEF0;}
   .sidebar-fluxo-count{margin-left:auto; font-family:var(--font-mono); font-size:10px; opacity:0.75;}
   .nav-item{
@@ -658,7 +658,7 @@
     transition:background 0.15s ease, color 0.15s ease;
   }
   .nav-item svg{width:17px; height:17px; flex-shrink:0;}
-  .nav-item:hover{background:var(--blue-soft); color:var(--incona-blue-deep);}
+  .nav-item:hover{background:var(--blue-soft); color:var(--brand-blue-deep);}
   .nav-item.active{
     background:var(--blueprint-navy);
     color:#fff;
@@ -675,7 +675,7 @@
     gap:6px;
     font-family:var(--font-mono);
     font-size:10px;
-    color:var(--incona-blue-deep);
+    color:var(--brand-blue-deep);
     background:var(--blue-soft);
     padding:6px 10px;
     border-radius:20px;
@@ -685,7 +685,7 @@
     content:"";
     width:6px; height:6px;
     border-radius:50%;
-    background:var(--incona-blue);
+    background:var(--brand-blue);
   }
 
   /* ---------- Mobile topbar / toggle ---------- */
@@ -816,7 +816,7 @@
     cursor:pointer;
   }
   .retira-row:hover{box-shadow:0 4px 12px rgba(16,40,58,0.06);}
-  .retira-row-id{font-family:var(--font-mono); font-size:12.5px; font-weight:600; color:var(--incona-blue-deep);}
+  .retira-row-id{font-family:var(--font-mono); font-size:12.5px; font-weight:600; color:var(--brand-blue-deep);}
   .retira-row-client{font-size:13.5px; font-weight:600; margin-top:2px;}
 
   .pipeline{
@@ -844,7 +844,7 @@
   }
   .status-dot{width:8px; height:8px; border-radius:50%; flex-shrink:0;}
   .status-dot.amber{background:var(--amber);}
-  .status-dot.blue{background:var(--incona-blue);}
+  .status-dot.blue{background:var(--brand-blue);}
   .status-dot.green{background:var(--green);}
   .column-title{
     font-family:var(--font-display);
@@ -883,7 +883,7 @@
     font-family:var(--font-mono);
     font-size:12.5px;
     font-weight:600;
-    color:var(--incona-blue-deep);
+    color:var(--brand-blue-deep);
   }
   .order-time{
     font-family:var(--font-mono);
@@ -1047,7 +1047,7 @@
     background:var(--surface);
     color:var(--ink);
   }
-  .search-input:focus{border-color:var(--incona-blue);}
+  .search-input:focus{border-color:var(--brand-blue);}
   .filter-select{
     padding:9px 12px;
     border:1px solid var(--line);
@@ -1070,7 +1070,7 @@
   }
   .btn svg{width:15px; height:15px;}
   .btn-primary{background:var(--blueprint-navy); color:#fff;}
-  .btn-primary:hover{background:var(--incona-blue-deep);}
+  .btn-primary:hover{background:var(--brand-blue-deep);}
   .btn-secondary{background:var(--surface); color:var(--ink); border-color:var(--line);}
   .btn-secondary:hover{background:var(--paper);}
 
@@ -1090,7 +1090,7 @@
   }
   .status-badge .status-dot{width:6px; height:6px;}
   .status-badge.status-amber{background:var(--amber-soft); color:#9C6A1E;}
-  .status-badge.status-blue{background:var(--blue-soft); color:var(--incona-blue-deep);}
+  .status-badge.status-blue{background:var(--blue-soft); color:var(--brand-blue-deep);}
   .status-badge.status-green{background:var(--green-soft); color:#2A6B41;}
   .status-badge.status-violet{background:var(--violet-soft); color:#5B4A94;}
   .status-dot.violet{background:var(--violet);}
@@ -1113,7 +1113,7 @@
   .pedido-row:hover{transform:translateY(-1px); box-shadow:0 4px 12px rgba(16,40,58,0.06);}
   .pedido-row.hidden{display:none;}
   .pedido-main{display:flex; align-items:center; gap:12px; min-width:220px; flex:1;}
-  .pedido-id{font-family:var(--font-mono); font-weight:600; font-size:12.5px; color:var(--incona-blue-deep); flex-shrink:0; white-space:nowrap;}
+  .pedido-id{font-family:var(--font-mono); font-weight:600; font-size:12.5px; color:var(--brand-blue-deep); flex-shrink:0; white-space:nowrap;}
   .pedido-client{font-size:13.5px; font-weight:600; flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
   .pedido-meta{display:flex; align-items:center; gap:18px; flex-wrap:wrap;}
   .pedido-employee{display:flex; align-items:center; gap:7px; font-size:12px; color:var(--ink-soft);}
@@ -1151,7 +1151,7 @@
   .pin-edit-input{
     width:64px;
     padding:4px 6px;
-    border:1px solid var(--incona-blue);
+    border:1px solid var(--brand-blue);
     border-radius:6px;
     font-family:var(--font-mono);
     font-size:16px;
@@ -1166,7 +1166,7 @@
   .historico-item:last-child{border-bottom:none;}
   .historico-dot{width:10px; height:10px; border-radius:50%; margin-top:5px; flex-shrink:0;}
   .historico-dot.amber{background:var(--amber);}
-  .historico-dot.blue{background:var(--incona-blue);}
+  .historico-dot.blue{background:var(--brand-blue);}
   .historico-dot.green{background:var(--green);}
   .historico-content{flex:1; min-width:0;}
   .historico-top{display:flex; justify-content:space-between; gap:10px; margin-bottom:2px;}
@@ -1227,7 +1227,7 @@
     border-radius:8px;
   }
   .team-menu-item svg{width:15px; height:15px; flex-shrink:0;}
-  .team-menu-item:hover{background:var(--blue-soft); color:var(--incona-blue-deep);}
+  .team-menu-item:hover{background:var(--blue-soft); color:var(--brand-blue-deep);}
   .team-menu-item-danger{color:var(--red) !important;}
   .team-menu-item-danger:hover{background:var(--red-soft) !important;}
 
@@ -1257,7 +1257,7 @@
     background:var(--paper);
     color:var(--ink);
   }
-  .form-input:focus, .form-select:focus{border-color:var(--incona-blue); background:var(--surface);}
+  .form-input:focus, .form-select:focus{border-color:var(--brand-blue); background:var(--surface);}
   .modal-actions{display:flex; gap:10px; margin-top:20px;}
   .modal-actions .btn{flex:1; justify-content:center;}
 
@@ -1266,7 +1266,7 @@
   .chart-card{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:20px;}
   .chart-card-title{font-family:var(--font-display); font-weight:700; font-size:14px; margin-bottom:14px;}
   .chart-card svg{width:100%; height:auto; display:block;}
-  .chart-card svg .bar{fill:var(--incona-blue);}
+  .chart-card svg .bar{fill:var(--brand-blue);}
   .chart-card svg .bar-value{font-family:var(--font-mono); font-size:10px; fill:var(--ink-soft); text-anchor:middle;}
   .chart-card svg .bar-day{font-family:var(--font-mono); font-size:10px; fill:var(--ink-faint); text-anchor:middle;}
   .chart-card svg .baseline{stroke:var(--line); stroke-width:1;}
@@ -1275,11 +1275,11 @@
   .hbar-top{display:flex; justify-content:space-between; font-size:12px; margin-bottom:6px;}
   .hbar-top b{font-family:var(--font-mono);}
   .hbar-track{height:8px; background:var(--paper); border-radius:20px; overflow:hidden;}
-  .hbar-fill{height:100%; background:var(--incona-blue); border-radius:20px;}
+  .hbar-fill{height:100%; background:var(--brand-blue); border-radius:20px;}
   .vbar-chart{display:flex; align-items:flex-end; gap:10px; height:160px; padding-top:24px;}
   .vbar-col{flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; height:100%;}
   .vbar-value{font-family:var(--font-mono); font-size:11px; color:var(--ink-soft); margin-bottom:4px;}
-  .vbar-bar{width:70%; background:var(--incona-blue); border-radius:4px 4px 0 0; min-height:2px;}
+  .vbar-bar{width:70%; background:var(--brand-blue); border-radius:4px 4px 0 0; min-height:2px;}
   .vbar-day{font-family:var(--font-mono); font-size:10px; color:var(--ink-faint); margin-top:6px;}
   .relatorio-empty{font-size:12.5px; color:var(--ink-faint); padding:20px 0; text-align:center;}
 
@@ -1329,15 +1329,14 @@
 
   .checkbox-group{display:flex; flex-direction:column; gap:9px;}
   .checkbox-item{display:flex; align-items:center; gap:9px; font-size:13.5px; font-weight:500; cursor:pointer;}
-  .checkbox-item input{width:16px; height:16px; accent-color:var(--incona-blue); flex-shrink:0;}
+  .checkbox-item input{width:16px; height:16px; accent-color:var(--brand-blue); flex-shrink:0;}
 
 </style>
 </head>
 <body>
 <div id="loginScreen">
   <div class="login-card tick">
-    <div class="login-brand">Incona</div>
-    <div class="login-tag">Controle</div>
+    <div class="login-brand">Painel de Controle</div>
 
     <div class="login-tabs">
       <button class="login-tab active" type="button" data-tipo="funcionario">Funcionário</button>
@@ -1646,11 +1645,10 @@
 
   <aside class="sidebar" id="sidebar">
     <div class="brand">
-      <div>
-        <div class="brand-name">Incona</div>
-        <div class="brand-tag">Controle</div>
+        <div>
+          <div class="brand-name">Painel de Controle</div>
+        </div>
       </div>
-    </div>
 
     <div class="nav-label">Fluxo</div>
     <div class="sidebar-fluxo-toggle" id="sidebarFluxoToggle">
@@ -1705,7 +1703,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
       </button>
       <div class="brand">
-        <div class="brand-name">Incona</div>
+        <div class="brand-name">Painel de Controle</div>
       </div>
     </div>
 

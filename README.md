@@ -1,6 +1,6 @@
-# Incona Dashboard · Clone Completo
+# Painel de Controle · Expedição e Estoque
 
-Este repositório contém a réplica exata do aplicativo e painel de controle **Incona** ([https://incona-dashboard.vercel.app](https://incona-dashboard.vercel.app)).
+Sistema de gestão operacional para controle de pedidos, fluxo de expedição, separação, entregas, registro de entradas de mercadorias e gestão de equipe.
 
 ---
 
